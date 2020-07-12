@@ -1,0 +1,287 @@
+/* ONE FILE FOR ALL CUSTOM CSS */
+
+@keyframes toColor {
+
+    0%   {filter: saturate(1);}
+    50%  {filter: saturate(8);}
+    100% {filter: saturate(1);}
+
+}
+@keyframes aperture{
+    0%   {border-width: 90px;     border-style: double;}
+    100% {border-width: 5px;    border-style: double;}
+}
+@keyframes aperture-large{
+    0%   {border-width: 180px;     border-style: double;}
+    100% {border-width: 5px;    border-style: double;}
+}
+
+@keyframes navbar{
+
+    0%      {background-color: rgb(255, 248, 148);}
+    25%     {background-color: rgb(255, 238, 0);}
+    75%     {background-color: rgb(255, 238, 0);}
+    100%    {background-color: rgb(255, 248, 148);}
+}
+
+ body {
+
+    background: rgb(92,153,139);
+    background: linear-gradient(355deg, rgba(92,153,139,1) 25%, rgba(75,113,149,1) 27%, rgba(75,113,149,1) 50%, rgba(67,67,113,1) 52%, rgba(67,67,113,1) 75%, rgba(72,64,65,1) 77%);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+ 
+ /* to keep navbar items horizontal */
+.custom-row {
+    flex-direction: row;
+}
+
+/* custom google fonts */
+a, h1 {
+    font-family: "Arial Black", Gadget, sans-serif;
+    color: #FFDE0B;
+  }
+
+a:hover {
+    font-weight: bold;
+    
+ }
+
+ p{
+    font-family: 'Kalam', cursive;
+    color: #FFDE0B;
+ 
+}
+.bottomp{
+    position: relative;
+    bottom: 0;
+    right: 0;
+ }
+    
+.marker-font {
+    font-family: 'Permanent Marker', cursive;
+}
+
+.kalam-font{
+    font-family: 'Kalam', cursive;
+    font-weight: bolder;
+}
+
+
+.row {
+    display: flex; /* equal height of the children */
+}
+  
+.col {
+    flex: 1; /* additionally, equal width */
+    padding: 1em;
+    border: solid;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    
+    /*border-bottom: 12px dotted #FFDE0B;*/
+    padding-bottom: 5px
+
+}
+main {padding-top: 20px;}
+
+figcaption {
+    /*height: 4em;*/
+    padding: .5em;
+    text-align: center;
+    display:table-cell;
+vertical-align:middle;
+
+  }
+
+/* custom colors */
+.custom-background-color {
+    background-color: transparent;
+}
+
+.custom-text-color {
+    color:#FFDE0B;
+    text-shadow: 2px 2px 18px #000000;
+}
+.custom-text-color-footy {
+    color:#FFDE0B;
+    text-shadow: 2px 2px 18px #000000;
+}
+.custom-text-color-brand {
+    color:#FFDE0B;
+    text-shadow: 2px 2px 18px #000000;
+}
+.custom-background-color-brand {
+    background-color:transparent;
+}
+.custom-pic-text{
+    color:#ffffff;
+    text-shadow: 0px 0px 5px #000000;
+    font-weight: bold;
+    font-family: 'Kalam';
+    font-size: 1.1em;
+}
+.custom-pic-background{
+    background-color: transparent;
+}
+.border {
+    outline: 1px solid black;
+}
+.card {
+    border: none;
+    background-color: transparent;
+}
+
+.bigfont {
+    font-size: 350px;
+    color: white;
+    background: rgb(255,223,0);
+    background: linear-gradient(180deg, rgba(255,223,0,1) 33%, rgba(37,247,236,1) 71%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* this is to make a 60px fixed distance AFTER the main section, so the footer will nto overlap */
+.sticky-footer {
+    padding-bottom: 2.5em;
+}
+
+/*size of email png*/
+.email-icon {
+    height: 25%;
+    width: 25%;
+}
+
+.bottomfa:hover{
+    font-size:2em;
+    transition: 0.25s ease-out;
+  }
+
+.bottomfa:focus{
+    font-size:2em;
+    transition: 0.25s ease-out;
+}
+
+.bottomfa {
+    line-height: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+#contentMenu {
+    flex-grow: 100;
+
+}
+
+.mainh4 {
+    font-size: 3.1em;
+    color: #FFDE0B;
+}
+
+.mainp {
+    font-size:1.5em;
+    color: #FFDE0B;
+}
+
+.mr-auto {
+    flex: 1;
+    margin: auto !important;
+    display: flex;
+    justify-content: space-between;
+    }
+.nav-link:hover {
+    /*background-color: #dfdfdf;*/
+    color:rgb(255, 255, 255);
+    text-shadow: 2px 2px 18px #000000;
+    outline: 4px dashed #FFDE0B;
+
+}
+.portfolio {
+    height: auto;
+    width: 100%;    
+    object-fit: fill;
+}
+.imageClip{
+    width:100%;
+    height: auto;
+    overflow: hidden;
+    border: rgb(57, 57, 172);
+    border-style: solid;
+    border-width: 50px;
+}
+
+.rect-container{
+    width:100%;
+
+    text-align:center;
+    overflow:hidden;
+    border: #cecece;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.circle-container {
+    width:200px;
+    height:200px;
+    text-align:center;
+    border-radius:50%;
+    overflow:hidden;
+    border: #FFDE0B;
+    border-style: solid;
+    border-width: 5px;
+    margin: auto;
+    animation: aperture 2s;
+
+}
+.circle-container-large {
+    width:400px;
+    height:400px;
+    text-align:center;
+    border-radius:50%;
+    overflow:hidden;
+    border: #FFDE0B;
+    border-style: solid;
+    border-width: 10px;
+    margin: auto;
+    animation: aperture-large 2s;
+}
+.circle-container-large:hover {
+    border : 20px dashed #FFDE0B;   
+ }
+img.circle {
+    animation: toColor 2s;
+    min-width:100px;
+    max-width:none;
+    height:200px;
+    margin:0 -100%;
+  }
+  img.circle-large {
+    animation: toColor 2s;
+    min-width:100px;
+    max-width:none;
+    height:400px;
+    margin:0 -100%;
+  }
+.circle-container:hover {
+    border : 10px dashed #FFDE0B;   
+ }
+
+img:hover {
+
+    filter:saturate(8);
+}
+
+.section-centered a {
+    float: none;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
