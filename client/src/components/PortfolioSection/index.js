@@ -9,9 +9,11 @@ function PortfolioSection(props) {
     console.log(props)
     function handleDisplayPModal(event) {
         event.preventDefault();
-        const srcArray = event.target.src.split("/");
-           
-        setShowModal({ ...displayModal, display: props.kid + 1})
+        if (event.target.src) {
+            const srcArray = event.target.src.split("/");
+            setShowModal({ ...displayModal, display: props.kid + 1})
+        }
+        
     }
 
     function handleClosePModal(event) {

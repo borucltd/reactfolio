@@ -20,7 +20,7 @@ function Portfolio(props) {
         {
           id: "#idnasa",
           name: "https://github.com/borucltd/patient0",
-          label: "Cool project which uses </br> NASA and SLACK API",
+          label: "Cool project which uses NASA and SLACK API",
           src: "./assets/images/quiz.png"
          },
          {
@@ -32,13 +32,13 @@ function Portfolio(props) {
          {
           id: "#idscheduler",
           name: "https://github.com/borucltd/hw5_planner",
-          label: "Day scheduler using Java Script </br>and local storage",
+          label: "Day scheduler using Java Script and local storage",
           src: "./assets/images/scheduler.png"
          },
          {
           id: "#idweather",
           name: "https://github.com/borucltd/hw6_weather",
-          label: "Weather dashboard that uses </br>openWeather API",
+          label: "Weather dashboard that uses openWeather API",
           src: "./assets/images/weather.png"
          }
       ]
