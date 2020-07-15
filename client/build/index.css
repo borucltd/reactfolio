@@ -147,7 +147,7 @@ figcaption {
 
 }
 
-
+}
 
 .bigfont {
     font-size: 350px;
@@ -305,24 +305,15 @@ img.circle-large:hover {
   /* The modal's background */
 .modal {
     display: none;
-    left: 50%;
-    top: 50%;
+    left: 0;
+    top: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
     overflow: auto;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.9);
-    transform: translate(-50%, -50%);
   }
   
-  .display-block {
-    display: block;
-  }
-  
-  .display-none {
-    display: none;
-  }
-
   /* Display the modal when targeted */
   .modal:target {
     display: table;
@@ -345,7 +336,7 @@ img.circle-large:hover {
     outline: 0;
     border: 6px #FFDE0B dashed;
     text-align: justify;
-    width: auto;
+    width: 80%;
     max-width: 650px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   

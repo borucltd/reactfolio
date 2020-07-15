@@ -48,7 +48,7 @@ function Portfolio(props) {
         <main className="container mt-3 sticky-footer">
           <section className="gallery row">
           {portfolio.map((item,index) => 
-            <PortfolioSection key={index} kid={index} nonce={item.name} label={item.label} src={item.src}  />     
+            <PortfolioSection key={index} kid={index} nonce={item.name} name={item.name} label={item.label} src={item.src}  />     
           )}
           </section>  
         </main>

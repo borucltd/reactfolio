@@ -31,7 +31,7 @@ function PortfolioSection(props) {
                         <figcaption className="figure-caption custom-pic-text custom-pic-background">{props.label}</figcaption>
                 </a>
             </figure>
-            <PModal show={displayModal.display} handleClose={handleClosePModal} key={props.id} nonce={props.nonce} label={props.label} src={props.src} /> 
+            <PModal show={displayModal.display} handleClose={handleClosePModal} key={props.id} nonce={props.nonce} name={props.name}  label={props.label} src={props.src} /> 
         </section>
         
     )

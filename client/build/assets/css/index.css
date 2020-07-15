@@ -28,10 +28,10 @@
 
     background: rgb(92,153,139);
     background: linear-gradient(355deg, rgba(92,153,139,1) 25%, rgba(75,113,149,1) 27%, rgba(75,113,149,1) 50%, rgba(67,67,113,1) 52%, rgba(67,67,113,1) 75%, rgba(72,64,65,1) 77%);
-    background-attachment: fixed;
-    background-position: top;
-    background-repeat: no-repeat;
+
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
 }
  
@@ -45,10 +45,6 @@ a, h1 {
     font-family: "Arial Black", Gadget, sans-serif;
     color: #FFDE0B;
   }
-
-.noHover{
-    pointer-events: none;
-}
 
 a:hover {
     font-weight: bold;
@@ -76,7 +72,9 @@ a:hover {
 }
 
 
-
+.row {
+    display: flex; /* equal height of the children */
+}
   
 .col {
     flex: 1; /* additionally, equal width */
@@ -92,25 +90,21 @@ header {
     padding-bottom: 5px
 
 }
-main {padding-top: 20px; height: 80vh}
+main {padding-top: 20px;}
 
 figcaption {
     /*height: 4em;*/
     padding: .5em;
     text-align: center;
     display:table-cell;
-    vertical-align:middle;
+vertical-align:middle;
 
   }
-
-
 
 /* custom colors */
 .custom-background-color {
     background-color: transparent;
 }
-
-
 
 .custom-text-color {
     color:#FFDE0B;
@@ -143,11 +137,7 @@ figcaption {
 .card {
     border: none;
     background-color: transparent;
-    height: 100%;
-
 }
-
-
 
 .bigfont {
     font-size: 350px;
@@ -200,7 +190,6 @@ figcaption {
     color: #FFDE0B;
 }
 
-
 .mr-auto {
     flex: 1;
     margin: auto !important;
@@ -252,8 +241,8 @@ figcaption {
 
 }
 .circle-container-large {
-    width: 17em;
-    height: 17em;
+    width:400px;
+    height:400px;
     text-align:center;
     border-radius:50%;
     overflow:hidden;
@@ -273,23 +262,20 @@ img.circle {
     height:200px;
     margin:0 -100%;
   }
-img.circle-large {
+  img.circle-large {
+    animation: toColor 2s;
     min-width:100px;
     max-width:none;
-    height:17em;
+    height:400px;
     margin:0 -100%;
   }
 .circle-container:hover {
     border : 10px dashed #FFDE0B;   
  }
 
-img.circle:hover {
+img:hover {
 
     filter:saturate(8);
-}
-img.circle-large:hover {
-
-    filter:saturate(2.5);
 }
 
 .section-centered a {
@@ -299,107 +285,3 @@ img.circle-large:hover {
     left: 50%;
     transform: translate(-50%, -50%);
   }
-
-
-
-  /* The modal's background */
-.modal {
-    display: none;
-    left: 50%;
-    top: 50%;
-    width: 100%;
-    height: auto;
-    overflow: auto;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.9);
-    transform: translate(-50%, -50%);
-  }
-  
-  .display-block {
-    display: block;
-  }
-  
-  .display-none {
-    display: none;
-  }
-
-  /* Display the modal when targeted */
-  .modal:target {
-    display: table;
-    position: absolute;
-  }
-  
-  /* The modal box */
-  .modal-dialog {
-    display: table-cell;
-    vertical-align: middle;
-    
-  }
-  
-/* The modal's content */
-.modal-dialog .modal-content {
-    margin: auto;
-    background-color: rgb(255, 175, 28);
-    position: relative;
-    padding: 0;
-    outline: 0;
-    border: 6px #FFDE0B dashed;
-    text-align: justify;
-    width: auto;
-    max-width: 650px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  
-    /* Add animation */
-    -webkit-animation-name: example; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 0.5s; /* Chrome, Safari, Opera */
-    animation-name: example;
-    animation-duration: 0.5s;
-  }
-
-  /* The button used to close the modal */
-.closebtn {
-    color: black;
-    text-decoration: none;
-    float: right;
-    font-size: 25px;
-    font-weight: bold;
-  }
-
-.prolink {
-    color: rgb(29, 17, 196);
-    text-decoration: none;
-    
-    font-size: 25px;
-    vertical-align: middle;
-    text-align: center;
-    font-family: monospace;
-    font-weight: bold;
-    
-
-}
-  
-  .closebtn:hover,
-  .closebtn:focus {
-    color: rgb(245, 0, 0);
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  /* Add animation (Chrome, Safari, Opera) */
-@-webkit-keyframes example {
-    from {top:-100px;opacity: 0;}
-    to {top:0px;opacity:1;}
-  }
-  
-  /* Add animation (Standard syntax) */
-  @keyframes example {
-    from {top:-100px;opacity: 0;}
-    to {top:0px;opacity:1;}
-  }
-
-
-  .container2 {
-    padding: 0px 6px;
-
-  }
-  

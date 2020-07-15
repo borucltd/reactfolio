@@ -1,7 +1,7 @@
 const nodemailer = require("nodemailer");
 
-const destination ="YYYYYYYYYYYYYY";
-const pwd = "XXXXXXX"
+const destination = "AAAAA";
+const pwd = "BBBBBBBBBBB"
 
 const transporter = nodemailer.createTransport({
   service: 'gmail',
